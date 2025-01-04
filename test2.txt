@@ -1,1 +1,27 @@
-Two
+
+Dijkstra's Algorithm
+Overview:
+Dijkstra's algorithm is a graph traversal algorithm used to find the shortest path between nodes in a graph. It was developed by Edsger W. Dijkstra in 1956. The algorithm works for weighted, directed, and undirected graphs without negative edge weights.
+
+Key Features:
+
+Purpose: Finds the shortest path from a source node to all other nodes in the graph.
+Graph Type: Works with non-negative edge weights.
+Optimality: Guarantees the shortest path.
+Steps:
+
+Initialization:
+
+Create a distance table and initialize the source node's distance to 0 and all other nodes to infinity.
+Use a priority queue (or min-heap) to store nodes along with their current shortest distance.
+Relaxation:
+
+Dequeue the node with the smallest distance from the priority queue (starting with the source node).
+Update the distances of its neighbors if a shorter path is found through the current node.
+Add the updated neighbors back into the priority queue.
+Repeat:
+
+Continue dequeuing nodes and updating distances until all nodes have been processed or the priority queue is empty.
+Result:
+
+The distance table contains the shortest distance from the source node to every other node.
